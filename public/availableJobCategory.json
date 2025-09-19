@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cat001",
+    "category": "Software",
+    "jobsAvailable": 24,
+    "image": "https://i.postimg.cc/pdbbj84c/software.png"
+  },
+  {
+    "id": "cat002",
+    "category": "Marketing & Sale",
+    "jobsAvailable": 8,
+    "image": "https://i.postimg.cc/7b8M9H44/marketing.png"
+  },
+  {
+    "id": "cat003",
+    "category": "Finance",
+    "jobsAvailable": 7,
+    "image": "https://i.postimg.cc/NfmWcL51/finance.png"
+  },
+  {
+    "id": "cat004",
+    "category": "Customer Help",
+    "jobsAvailable": 4,
+    "image": "https://i.postimg.cc/tJSGncGF/customer-Help.png"
+  },
+  {
+    "id": "cat006",
+    "category": "Healthcare",
+    "jobsAvailable": 6,
+    "image": "https://i.postimg.cc/8ktSY7fs/healthcare.png"
+  },
+  {
+    "id": "cat007",
+    "category": "Media & Entertainment",
+    "jobsAvailable": 7,
+    "image": "https://i.postimg.cc/MHK8TSNW/media.png"
+  },
+  {
+    "id": "cat008",
+    "category": "Food & Delivery",
+    "jobsAvailable": 10,
+    "image": "https://i.postimg.cc/bwP4N8t4/food-Delivery.png"
+  },
+  {
+    "id": "cat009",
+    "category": "Renewable Energy",
+    "jobsAvailable": 6,
+    "image": "https://i.postimg.cc/Bn1ftNY1/Renewable-Energy.png"
+  }
+]
