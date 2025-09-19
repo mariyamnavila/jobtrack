@@ -1,10 +1,11 @@
 import footer from '../../assets/footer.png';
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+        <div >
+            <div className='bg-base-200'>
+                <footer className="footer sm:footer-horizontal container mx-auto text-base-content p-10">
                 <aside>
-                    <img className='w-[250px] md:w-[200px] lg:w-[250px] rounded-xl ml-9 ' src={footer} alt="" />
+                    <img className='w-[250px] md:w-[200px] lg:w-[250px] rounded-xl lg:ml-7 mx-auto lg:mx-0' src={footer} alt="" />
                 </aside>
                 <nav className=' lg:mx-0 mx-auto'>
                     <h6 className="footer-title mx-auto lg:mx-0">Services</h6>
@@ -27,11 +28,14 @@ const Footer = () => {
                     <a className="link link-hover mx-auto lg:mx-0">Cookie policy</a>
                 </nav>
             </footer>
-            <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+            </div>
+            <div className=' bg-base-300'>
+                <footer className="footer sm:footer-horizontal footer-center container mx-auto text-base-content p-4">
                 <aside>
                     <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
                 </aside>
             </footer>
+            </div>
         </div>
     );
 };
