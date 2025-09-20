@@ -1,0 +1,12 @@
+.slick-prev:before,
+.slick-next:before {
+    color: #3d9970 !important;
+    font-size: 30px !important;
+    line-height: 1;
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

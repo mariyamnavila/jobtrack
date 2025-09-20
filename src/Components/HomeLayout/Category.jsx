@@ -2,10 +2,38 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useLoaderData } from "react-router-dom";
 import CategoryItem from "../CategoryItem";
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useGSAP } from '@gsap/react';
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './category.css'
 gsap.registerPlugin(ScrollTrigger)
+
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", top: '93px', right: '-9px' }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    console.log(className, style);
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", position: 'relative', left: '-18px', top: '96px' }}
+            onClick={onClick}
+        />
+    );
+}
+
 
 const Category = () => {
     const scrollRef = useRef()
@@ -13,7 +41,7 @@ const Category = () => {
     useGSAP(() => {
         const texts = gsap.utils.toArray(
             scrollRef.current.children
-            );
+        );
         texts.forEach((text) => {
             gsap.from(text, {
                 yPercent: 100,
@@ -22,7 +50,7 @@ const Category = () => {
                 opacity: 0,
                 scrollTrigger: {
                     trigger: text,
-                    start:'top 80%',
+                    start: 'top 80%',
                     toggleActions: 'restart none none none',
                     markers: false,
                     // once: true
@@ -33,6 +61,49 @@ const Category = () => {
         })
     })
 
+
+    const [sliderReady, setSliderReady] = useState(false);
+
+    useEffect(() => {
+        setSliderReady(true);
+    }, []);
+
+    const settings = {
+        // dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    // initialSlide: 2
+                }
+            },
+            {
+                breakpoint:576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
     const categories = useLoaderData();
     return (
         <div className="container mx-auto my-16">
@@ -40,11 +111,20 @@ const Category = () => {
                 <h3 className="text-success text-4xl font-semibold">Browse by category</h3>
                 <p className="text-neutral font-medium px-5">Find the job that’s perfect for you. about 70+ new jobs everyday</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 px-3">
+            {sliderReady && (
+                <Slider {...settings} className="slider-container">
+                    {categories.map(item => <CategoryItem key={item.id} categoryItem={item} />)}
+                </Slider>
+            )}
+            {/* <Slider {...settings} className='slider-container'>
                 {
-                    categories.map(categoryItem => <CategoryItem categoryItem={categoryItem}></CategoryItem>)
+                    categories.map(categoryItem => {
+                        return (
+                            <CategoryItem key={categoryItem.id} categoryItem={categoryItem}></CategoryItem>
+                        );
+                    })
                 }
-            </div>
+            </Slider> */}
         </div>
     );
 };
