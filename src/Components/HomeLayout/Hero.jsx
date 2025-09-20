@@ -36,7 +36,7 @@ const Hero = () => {
         <div className='container mx-auto '>
             <div className='flex justify-center items-center pt-14 pb-10'>
                 <div className='lg:w-2/5 w-full px-6 space-y-5 lg:mr-36'>
-                    <h2 className='text-[#1d553c] text-5xl font-bold hero-text'>The <span className='text-[#3d9970]'>Easiest Way</span> <br />to Get Your New Job</h2>
+                    <h2 className='text-[#1d553c] text-5xl font-bold hero-text'>The <span className='text-secondary'>Easiest Way</span> <br />to Get Your New Job</h2>
                     <p className='text-success text-xl hero-text'>Each month, more than 3 million job seekers turn to
                         website in their search for work, making over 140,000
                         applications every single day</p>
