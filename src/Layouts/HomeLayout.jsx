@@ -3,6 +3,7 @@ import FindJob from "../Components/HomeLayout/FindJob";
 // import Category from "../Components/HomeLayout/Category";
 import Hero from "../Components/HomeLayout/Hero";
 import Hiring from "../Components/HomeLayout/Hiring";
+import Newsletter from "../Components/HomeLayout/Newsletter";
 import Numbers from "../Components/HomeLayout/Numbers";
 
 const HomeLayout = () => {
@@ -12,8 +13,9 @@ const HomeLayout = () => {
             {/* <Category></Category> */}
             <CategoryMain></CategoryMain>
             <Hiring></Hiring>
-            <Numbers></Numbers>
             <FindJob></FindJob>
+            <Numbers></Numbers>
+            <Newsletter></Newsletter>
         </div>
     );
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto sticky z-30 top-0 ">
             <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -40,7 +40,7 @@ const Navbar = () => {
                             alt="Tailwind CSS Navbar component"
                             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                     </div>
-                    <a className="btn btn-primary">Login</a>
+                    <a className="btn btn-primary hover:bg-[#1d553c]">Login</a>
                 </div>
             </div>
         </div>

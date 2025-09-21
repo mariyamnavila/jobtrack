@@ -40,13 +40,13 @@ const Hero = () => {
                     <p className='text-success text-xl hero-text'>Each month, more than 3 million job seekers turn to
                         website in their search for work, making over 140,000
                         applications every single day</p>
-                    <div className='flex '>
+                    <div className='flex'>
                         <div className='bg-white flex flex-col md:flex-row  shadow-2xl py-6 items-center space-x-3 rounded-2xl px-5 my-3 space-y-3'>
-                            <p className='flex items-center font-light text-success border-r-0 md:border-r border-[#8fae99] pr-2'> <SlBriefcase className='text-[#8fae99] mr-3' />Industry  <RiArrowDropDownLine className='text-2xl ' /></p>
-                            <p className='flex items-center font-light text-success border-r-0 md:border-r border-[#8fae99] pr-2'> <SlLocationPin className='text-[#8fae99] mr-3' />Location  <RiArrowDropDownLine className='text-2xl ' /></p>
+                            <p className='flex items-center font-light text-success border-r-0 md:border-r border-[#8fae99] pr-2 mb-0'> <SlBriefcase className='text-[#8fae99] mr-3 ' />Industry  <RiArrowDropDownLine className='text-2xl ' /></p>
+                            <p className='flex items-center font-light text-success border-r-0 md:border-r border-[#8fae99] pr-2  mb-0'> <SlLocationPin className='text-[#8fae99] mr-3' />Location  <RiArrowDropDownLine className='text-2xl ' /></p>
                             <div className='flex items-center'>
                                 <CgMenuGridO className='text-[#8fae99] text-xl mr-3' />
-                                <input className=' w-40' placeholder='Your keywords...' type="text" />
+                                <input className=' w-40 focus:outline-none' placeholder='Your keywords...' type="text" />
                             </div>
                         </div>
                         <div className='btn btn-primary relative -left-10 top-13 md:top-5 mt-3'>Search</div>

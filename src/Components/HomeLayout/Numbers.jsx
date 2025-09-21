@@ -22,7 +22,7 @@ function AnimatedNumber({ n }) {
 
 const Numbers = () => {
     return (
-        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 my-20">
+        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-40 mb-20">
             <div className="flex flex-col justify-center items-center space-y-2">
                 <h2 className="text-primary text-5xl font-bold flex" ><AnimatedNumber n={25}/> K+</h2>
                 <p className="text-[#1d553c] text-xl font-medium">Completed Cases</p>
