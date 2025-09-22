@@ -45,7 +45,7 @@ const FindJob = () => {
     })
 
     return (
-        <div className='container mx-auto flex md:flex-col lg:flex-row mt-50 mb-28 '>
+        <div className='container mx-auto flex md:flex-col lg:flex-row mt-50 mb-28 justify-center '>
             <div className='relative   md:mx-10 '>
                 <img className='absolute hidden lg:block w-[280px] rounded-2xl shadow-lg -top-24 border border-base-200' src={image1} alt="" />
                 <img className='w-[450px] hidden md:block lg:block h-[400px] object-cover rounded-4xl z-10 relative mx-[100px] shadow-md -top-12' src={find} alt="" />

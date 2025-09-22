@@ -3,6 +3,7 @@ import FindJob from "../Components/HomeLayout/FindJob";
 // import Category from "../Components/HomeLayout/Category";
 import Hero from "../Components/HomeLayout/Hero";
 import Hiring from "../Components/HomeLayout/Hiring";
+import Location from "../Components/HomeLayout/Location";
 import Newsletter from "../Components/HomeLayout/Newsletter";
 import Numbers from "../Components/HomeLayout/Numbers";
 
@@ -15,6 +16,7 @@ const HomeLayout = () => {
             <Hiring></Hiring>
             <FindJob></FindJob>
             <Numbers></Numbers>
+            <Location></Location>
             <Newsletter></Newsletter>
         </div>
     );

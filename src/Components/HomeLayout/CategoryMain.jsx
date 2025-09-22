@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CategoryItem from '../CategoryItem';
+import { Autoplay } from 'swiper/modules';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -46,30 +47,36 @@ const CategoryMain = () => {
             </div>
             <div className='mb-8'>
                 <Swiper
-                slidesPerView={1}
-                spaceBetween={10}
-                // pagination={{
-                //     clickable: true,
-                // }}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                    },
-                }}
-                // modules={[Pagination]}
-                className="mySwiper"
-            >
-                {categories.map(item => <SwiperSlide key={item.id} ><CategoryItem categoryItem={item} /></SwiperSlide>)}
-            </Swiper>
+                    slidesPerView={1}
+                    spaceBetween={10}
+                    // pagination={{
+                    //     clickable: true,
+                    // }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                        },
+                    }}
+                    // modules={[Pagination]}
+                    modules={[Autoplay]}
+                    loop={true}
+                    autoplay={{
+                        delay: 2000, 
+                        disableOnInteraction: false, 
+                    }}
+                    className="mySwiper"
+                >
+                    {categories.map(item => <SwiperSlide key={item.id} ><CategoryItem categoryItem={item} /></SwiperSlide>)}
+                </Swiper>
             </div>
         </div>
     );
