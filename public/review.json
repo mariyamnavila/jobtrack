@@ -1,0 +1,66 @@
+[
+    {
+        "id": "rev001",
+        "name": "Sophia Miller",
+        "profile": "https://i.postimg.cc/vBFHJc3x/sophia.jpg",
+        "position": "Product Manager",
+        "review": "Amazing platform! Found my dream job within two weeks. The interface is super easy to use.",
+        "rating": 5
+    },
+    {
+        "id": "rev002",
+        "name": "Ethan Johnson",
+        "profile": "https://i.postimg.cc/vBrHbbNq/Ethan.jpg",
+        "position": "Software Engineer",
+        "review": "I like how tailored the job recommendations are. Saved me hours of searching.",
+        "rating": 4
+    },
+    {
+        "id": "rev003",
+        "name": "Ava Thompson",
+        "profile": "https://i.postimg.cc/RVMqCJ9c/Ava.jpg",
+        "position": "Marketing Specialist",
+        "review": "The application tracking feature is a game changer! Keeps everything organized.",
+        "rating": 5
+    },
+    {
+        "id": "rev004",
+        "name": "Liam Davis",
+        "profile": "https://i.postimg.cc/CKfxrjHV/liam.jpg",
+        "position": "Data Analyst",
+        "review": "Great resource for entry-level positions. Helped me land my first full-time role.",
+        "rating": 4
+    },
+    {
+        "id": "rev005",
+        "name": "Olivia Wilson",
+        "profile": "https://i.postimg.cc/ZnmndCNz/olivia.jpg",
+        "position": "HR Manager",
+        "review": "Super helpful platform for both recruiters and candidates. Highly recommend!",
+        "rating": 5
+    },
+    {
+        "id": "rev006",
+        "name": "Noah Martinez",
+        "profile": "https://i.postimg.cc/282y1j8g/noah.jpg",
+        "position": "Graphic Designer",
+        "review": "Clean design and very intuitive. I just wish there were more creative jobs listed.",
+        "rating": 3
+    },
+    {
+        "id": "rev007",
+        "name": "Isabella Brown",
+        "profile": "https://i.postimg.cc/QNgHrJL8/isabella.jpg",
+        "position": "Business Analyst",
+        "review": "Got multiple interview calls within a week of applying. Really solid experience.",
+        "rating": 5
+    },
+    {
+        "id": "rev008",
+        "name": "James Anderson",
+        "profile": "https://i.postimg.cc/qvF7GmKL/james.jpg",
+        "position": "Customer Support Lead",
+        "review": "Support team is quick to respond and very helpful. Platform feels trustworthy.",
+        "rating": 4
+    }
+]

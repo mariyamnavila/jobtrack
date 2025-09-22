@@ -13,48 +13,48 @@ const Location = () => {
             </div>
             <div className='grid lg:grid-cols-9 md:grid-cols-2 grid-cols-1 gap-5 mb-5 mx-2.5'>
                 <div className='border border-base-200 rounded-xl p-2.5 lg:col-span-2'>
-                    <img className='rounded-xl w-full h-[222px]' src={location1} alt="" />
-                    <p className='text-xl font-medium text-success'> Paris, France</p>
+                    <img className='rounded-xl w-full h-[222px] mb-2' src={location1} alt="" />
+                    <p className='text-xl font-medium text-success mb-1.5'> Paris, France</p>
                     <div className='flex justify-between items-center text-xs font-medium text-neutral'>
                         <p>5 Vacancy</p>
                         <p>120 companies</p>
                     </div>
                 </div>
                 <div className='border border-base-200 rounded-xl p-2.5 lg:col-span-3'>
-                    <img className='rounded-xl w-full h-[222px]' src={location2} alt="" />
-                    <p className='text-xl font-medium text-success'>London, England</p>
+                    <img className='rounded-xl w-full h-[222px] mb-2' src={location2} alt="" />
+                    <p className='text-xl font-medium text-success mb-1.5'>London, England</p>
                     <div className='flex justify-between items-center text-xs font-medium text-neutral'>
                         <p>7 Vacancy</p>
                         <p>68 companies</p>
                     </div>
                 </div>
                 <div className='border border-base-200 rounded-xl p-2.5 lg:col-span-4'>
-                    <img className='rounded-xl w-full h-[222px]' src={location3} alt="" />
-                    <p className='text-xl font-medium text-success'>New York, USA</p>
+                    <img className='rounded-xl w-full h-[222px] mb-2' src={location3} alt="" />
+                    <p className='text-xl font-medium text-success mb-1.5'>New York, USA</p>
                     <div className='flex justify-between items-center text-xs font-medium text-neutral'>
                         <p>9 Vacancy</p>
                         <p>80 companies</p>
                     </div>
                 </div>
                 <div className='border border-base-200 rounded-xl p-2.5 lg:col-span-3'>
-                    <img className='rounded-xl w-full h-[222px]' src={location4} alt="" />
-                    <p className='text-xl font-medium text-success'>Amsterdam, Holland</p>
+                    <img className='rounded-xl w-full h-[222px] mb-2' src={location4} alt="" />
+                    <p className='text-xl font-medium text-success mb-1.5'>Amsterdam, Holland</p>
                     <div className='flex justify-between items-center text-xs font-medium text-neutral'>
                         <p>16 Vacancy</p>
                         <p>86 companies</p>
                     </div>
                 </div>
                 <div className='border border-base-200 rounded-xl p-2.5 lg:col-span-4'>
-                    <img className='rounded-xl w-full h-[222px]' src={location5} alt="" />
-                    <p className='text-xl font-medium text-success'>Copenhagen, Denmark</p>
+                    <img className='rounded-xl w-full h-[222px] mb-2' src={location5} alt="" />
+                    <p className='text-xl font-medium text-success mb-1.5'>Copenhagen, Denmark</p>
                     <div className='flex justify-between items-center text-xs font-medium text-neutral'>
                         <p>39 Vacancy</p>
                         <p>186 companies</p>
                     </div>
                 </div>
                 <div className='border border-base-200 rounded-xl p-2.5 lg:col-span-2'>
-                    <img className='rounded-xl w-full h-[222px]' src={location6} alt="" />
-                    <p className='text-xl font-medium text-success'>Berlin, Germany</p>
+                    <img className='rounded-xl w-full h-[222px] mb-2' src={location6} alt="" />
+                    <p className='text-xl font-medium text-success mb-1.5'>Berlin, Germany</p>
                     <div className='flex justify-between items-center text-xs font-medium text-neutral'>
                         <p>15 Vacancy</p>
                         <p>632 companies</p>

@@ -38,7 +38,7 @@ const CategoryMain = () => {
     })
 
 
-    const categories = useLoaderData();
+    const { categories } = useLoaderData();
     return (
         <div className="container mx-auto my-16">
             <div className="flex flex-col justify-center items-center space-y-5 mb-12" ref={scrollRef}>
@@ -70,8 +70,8 @@ const CategoryMain = () => {
                     modules={[Autoplay]}
                     loop={true}
                     autoplay={{
-                        delay: 2000, 
-                        disableOnInteraction: false, 
+                        delay: 2000,
+                        disableOnInteraction: false,
                     }}
                     className="mySwiper"
                 >
