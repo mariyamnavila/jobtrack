@@ -1,5 +1,6 @@
 import CategoryMain from "../Components/HomeLayout/CategoryMain";
 import ClientReviews from "../Components/HomeLayout/ClientReviews";
+import Companies from "../Components/HomeLayout/Companies";
 import FindJob from "../Components/HomeLayout/FindJob";
 // import Category from "../Components/HomeLayout/Category";
 import Hero from "../Components/HomeLayout/Hero";
@@ -15,6 +16,7 @@ const HomeLayout = () => {
             {/* <Category></Category> */}
             <CategoryMain></CategoryMain>
             <Hiring></Hiring>
+            <Companies></Companies>
             <FindJob></FindJob>
             <Numbers></Numbers>
             <Location></Location>

@@ -4,10 +4,42 @@ import location3 from '../../assets/location3.png';
 import location4 from '../../assets/location4.png';
 import location5 from '../../assets/location5.png';
 import location6 from '../../assets/location6.png';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger)
+
 const Location = () => {
+    const scrollRef = useRef()
+
+    useGSAP(() => {
+        const texts = gsap.utils.toArray(
+            scrollRef.current.children
+        );
+        texts.forEach((text) => {
+            gsap.from(text, {
+                yPercent: 100,
+                duration: 1.5,
+                stagger: 0.1,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: text,
+                    start: 'top 80%',
+                    toggleActions: 'restart none none none',
+                    markers: false,
+                    // once: true
+                },
+                ease: "back.out",
+                // ease: "expo.in",
+            })
+        })
+    })
+
     return (
         <div className="container mx-auto my-16">
-            <div className="flex flex-col justify-center items-center space-y-3 mb-12" >
+            <div className="flex flex-col justify-center items-center space-y-3 mb-12" ref={scrollRef}>
                 <h3 className="text-success text-4xl font-semibold">Jobs by Location</h3>
                 <p className="text-neutral font-medium px-5 text-center">Find your favorite jobs and get the benefits of yourself</p>
             </div>

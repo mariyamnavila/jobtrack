@@ -10,6 +10,7 @@
   default: true;
   --color-primary: #2f7c5a;
   --color-secondary: #3d9970;
+  --color-base-100: #f4f9f7;
   --color-base-200: #c0d9ce;
   --color-base-300: #8db8a5;
   --color-info: #64a287;
@@ -20,4 +21,8 @@
 
 a.active{
   @apply text-primary link
+}
+
+body{
+  background-color: white;
 }

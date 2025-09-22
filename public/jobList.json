@@ -2,7 +2,7 @@
   {
     "id": "comp001",
     "name": "TechNova Solutions",
-    "logo": "https://via.placeholder.com/100x100.png?text=TechNova",
+    "logo": "https://i.postimg.cc/cHr3MtjP/Company1.png",
     "location": "San Francisco, CA",
     "website": "https://www.technova.com",
     "industry": "Software Development",
@@ -10,109 +10,157 @@
       {
         "id": "job001",
         "title": "Frontend Developer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Frontend",
+        "bannerImage": "https://i.postimg.cc/gJWJrXpv/2112-i301-031-S-m004-c13-UI-and-UX-designers-concepts-isometric-composition.jpg",
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
         "description": "Work on building responsive user interfaces with React.",
-        "requirement_skill": ["JavaScript", "React", "CSS", "Git"]
+        "requirement_skill": [
+          "JavaScript",
+          "React",
+          "CSS",
+          "Git"
+        ]
       },
       {
         "id": "job002",
         "title": "Backend Engineer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Backend",
+        "bannerImage": "https://i.postimg.cc/TYpRdqbz/971.jpg",
         "location": "New York, NY",
         "salary": "$85,000 - $110,000",
         "jobType": "Full-time",
         "description": "Develop and maintain scalable APIs.",
-        "requirement_skill": ["Node.js", "Express", "MongoDB", "REST APIs"]
+        "requirement_skill": [
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "REST APIs"
+        ]
       },
       {
         "id": "job003",
         "title": "Full Stack Developer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=FullStack",
+        "bannerImage": "https://i.postimg.cc/nc00kBwh/coding-man.jpg",
         "location": "Remote",
         "salary": "$90,000 - $120,000",
         "jobType": "Full-time",
         "description": "Build complete web apps from frontend to backend.",
-        "requirement_skill": ["React", "Node.js", "PostgreSQL", "AWS"]
+        "requirement_skill": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "AWS"
+        ]
       },
       {
         "id": "job004",
         "title": "UI/UX Designer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=UIUX",
+        "bannerImage": "https://i.postimg.cc/VNbgmTsJ/html-css-collage-concept.jpg",
         "location": "San Francisco, CA",
         "salary": "$60,000 - $80,000",
         "jobType": "Full-time",
         "description": "Design user-friendly interfaces and wireframes.",
-        "requirement_skill": ["Figma", "Adobe XD", "Wireframing", "Prototyping"]
+        "requirement_skill": [
+          "Figma",
+          "Adobe XD",
+          "Wireframing",
+          "Prototyping"
+        ]
       },
       {
         "id": "job005",
         "title": "Mobile App Developer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Mobile",
+        "bannerImage": "https://i.postimg.cc/yYBbnV1v/programming-background-collage.jpg",
         "location": "Remote",
         "salary": "$80,000 - $100,000",
         "jobType": "Full-time",
         "description": "Build cross-platform apps with React Native.",
-        "requirement_skill": ["React Native", "Java/Kotlin", "iOS/Android SDKs"]
+        "requirement_skill": [
+          "React Native",
+          "Java/Kotlin",
+          "iOS/Android SDKs"
+        ]
       },
       {
         "id": "job006",
         "title": "DevOps Engineer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=DevOps",
+        "bannerImage": "https://i.postimg.cc/PfMLp4PN/programming-background-with-person-working-with-codes-computer.jpg",
         "location": "Austin, TX",
         "salary": "$95,000 - $125,000",
         "jobType": "Full-time",
         "description": "Automate deployments and manage cloud infrastructure.",
-        "requirement_skill": ["Docker", "Kubernetes", "AWS", "CI/CD"]
+        "requirement_skill": [
+          "Docker",
+          "Kubernetes",
+          "AWS",
+          "CI/CD"
+        ]
       },
       {
         "id": "job007",
         "title": "QA Engineer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=QA",
+        "bannerImage": "https://i.postimg.cc/yYBbnV1v/programming-background-collage.jpg",
         "location": "Remote",
         "salary": "$55,000 - $75,000",
         "jobType": "Full-time",
         "description": "Test applications and ensure product quality.",
-        "requirement_skill": ["Selenium", "Jest", "Automation Testing", "Bug Tracking"]
+        "requirement_skill": [
+          "Selenium",
+          "Jest",
+          "Automation Testing",
+          "Bug Tracking"
+        ]
       },
       {
         "id": "job008",
         "title": "Data Scientist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=DataSci",
+        "bannerImage": "https://i.postimg.cc/gJWJrXpv/2112-i301-031-S-m004-c13-UI-and-UX-designers-concepts-isometric-composition.jpg",
         "location": "Chicago, IL",
         "salary": "$100,000 - $135,000",
         "jobType": "Full-time",
         "description": "Analyze datasets and create predictive models.",
-        "requirement_skill": ["Python", "Machine Learning", "Pandas", "SQL"]
+        "requirement_skill": [
+          "Python",
+          "Machine Learning",
+          "Pandas",
+          "SQL"
+        ]
       },
       {
         "id": "job009",
         "title": "Cybersecurity Analyst",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Security",
+        "bannerImage": "https://i.postimg.cc/VNbgmTsJ/html-css-collage-concept.jpg",
         "location": "Remote",
         "salary": "$80,000 - $110,000",
         "jobType": "Full-time",
         "description": "Monitor and secure systems against threats.",
-        "requirement_skill": ["Firewalls", "SIEM", "Penetration Testing", "Linux"]
+        "requirement_skill": [
+          "Firewalls",
+          "SIEM",
+          "Penetration Testing",
+          "Linux"
+        ]
       },
       {
         "id": "job010",
         "title": "Technical Support Specialist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Support",
+        "bannerImage": "https://i.postimg.cc/PfMLp4PN/programming-background-with-person-working-with-codes-computer.jpg",
         "location": "Remote",
         "salary": "$40,000 - $55,000",
         "jobType": "Part-time",
         "description": "Provide technical assistance to clients.",
-        "requirement_skill": ["Troubleshooting", "Customer Support", "Networking Basics"]
+        "requirement_skill": [
+          "Troubleshooting",
+          "Customer Support",
+          "Networking Basics"
+        ]
       }
     ]
   },
   {
     "id": "comp002",
     "name": "GreenLeaf Corp",
-    "logo": "https://via.placeholder.com/100x100.png?text=GreenLeaf",
+    "logo": "https://i.postimg.cc/6pXdJ32G/Company2png.png",
     "location": "Austin, TX",
     "website": "https://www.greenleaf.com",
     "industry": "Renewable Energy",
@@ -120,69 +168,94 @@
       {
         "id": "job011",
         "title": "Project Manager",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=PM",
+        "bannerImage": "https://i.postimg.cc/gJcvnk3B/medium-shot-engineers-discussing-about-solar-pannels.jpg",
         "location": "Austin, TX",
         "salary": "$60,000 - $80,000",
         "jobType": "Full-time",
         "description": "Manage solar energy projects from planning to execution.",
-        "requirement_skill": ["Leadership", "Communication", "Agile", "Planning"]
+        "requirement_skill": [
+          "Leadership",
+          "Communication",
+          "Agile",
+          "Planning"
+        ]
       },
       {
         "id": "job012",
         "title": "Solar Panel Technician",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Technician",
+        "bannerImage": "https://i.postimg.cc/43Q6fhH9/solar-pannels-wind-power-plant-outside.jpg",
         "location": "Austin, TX",
         "salary": "$40,000 - $55,000",
         "jobType": "Full-time",
         "description": "Install and maintain solar panels.",
-        "requirement_skill": ["Electrical Work", "Problem Solving", "Teamwork"]
+        "requirement_skill": [
+          "Electrical Work",
+          "Problem Solving",
+          "Teamwork"
+        ]
       },
       {
         "id": "job013",
         "title": "Energy Analyst",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Analyst",
+        "bannerImage": "https://i.postimg.cc/02kCbn0y/sunset-sky-powers-wind-solar-energy-generated-by-ai.jpg",
         "location": "Remote",
         "salary": "$65,000 - $85,000",
         "jobType": "Full-time",
         "description": "Analyze energy usage and provide recommendations.",
-        "requirement_skill": ["Excel", "Data Analysis", "Reporting"]
+        "requirement_skill": [
+          "Excel",
+          "Data Analysis",
+          "Reporting"
+        ]
       },
       {
         "id": "job014",
         "title": "Research Scientist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Research",
+        "bannerImage": "https://i.postimg.cc/zBYC5Ff5/sunny-landscape-with-windmills.jpg",
         "location": "Austin, TX",
         "salary": "$75,000 - $95,000",
         "jobType": "Full-time",
         "description": "Work on renewable energy innovations.",
-        "requirement_skill": ["Lab Work", "Research", "Problem Solving"]
+        "requirement_skill": [
+          "Lab Work",
+          "Research",
+          "Problem Solving"
+        ]
       },
       {
         "id": "job015",
         "title": "Sales Executive",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Sales",
+        "bannerImage": "https://i.postimg.cc/43Q6fhH9/solar-pannels-wind-power-plant-outside.jpg",
         "location": "Houston, TX",
         "salary": "$50,000 - $70,000",
         "jobType": "Full-time",
         "description": "Sell renewable energy solutions.",
-        "requirement_skill": ["Sales", "Negotiation", "Communication"]
+        "requirement_skill": [
+          "Sales",
+          "Negotiation",
+          "Communication"
+        ]
       },
       {
         "id": "job016",
         "title": "Marketing Specialist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Marketing",
+        "bannerImage": "https://i.postimg.cc/gJcvnk3B/medium-shot-engineers-discussing-about-solar-pannels.jpg",
         "location": "Remote",
         "salary": "$45,000 - $60,000",
         "jobType": "Full-time",
         "description": "Promote company products and services.",
-        "requirement_skill": ["Social Media", "SEO", "Content Writing"]
+        "requirement_skill": [
+          "Social Media",
+          "SEO",
+          "Content Writing"
+        ]
       }
     ]
   },
   {
     "id": "comp003",
     "name": "FinEdge Analytics",
-    "logo": "https://via.placeholder.com/100x100.png?text=FinEdge",
+    "logo": "https://i.postimg.cc/rFWSPWmk/Company3.png",
     "location": "Chicago, IL",
     "website": "https://www.finedge.com",
     "industry": "Finance & Data",
@@ -190,79 +263,108 @@
       {
         "id": "job017",
         "title": "Data Analyst",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=DataAnalyst",
+        "bannerImage": "https://i.postimg.cc/QCykLG9Y/3852751.jpg",
         "location": "Remote",
         "salary": "$55,000 - $75,000",
         "jobType": "Full-time",
         "description": "Analyze financial data and prepare reports.",
-        "requirement_skill": ["Python", "SQL", "Excel", "Tableau"]
+        "requirement_skill": [
+          "Python",
+          "SQL",
+          "Excel",
+          "Tableau"
+        ]
       },
       {
         "id": "job018",
         "title": "Machine Learning Engineer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=ML",
+        "bannerImage": "https://i.postimg.cc/C53BHFf0/business-data-analysis.jpg",
         "location": "Chicago, IL",
         "salary": "$95,000 - $120,000",
         "jobType": "Full-time",
         "description": "Develop ML models for financial forecasting.",
-        "requirement_skill": ["TensorFlow", "Scikit-learn", "Data Pipelines"]
+        "requirement_skill": [
+          "TensorFlow",
+          "Scikit-learn",
+          "Data Pipelines"
+        ]
       },
       {
         "id": "job019",
         "title": "Financial Analyst",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Finance",
+        "bannerImage": "https://i.postimg.cc/QCykLG9Y/3852751.jpg",
         "location": "Chicago, IL",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
         "description": "Conduct financial planning and risk analysis.",
-        "requirement_skill": ["Finance", "Accounting", "Excel"]
+        "requirement_skill": [
+          "Finance",
+          "Accounting",
+          "Excel"
+        ]
       },
       {
         "id": "job020",
         "title": "Business Intelligence Developer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=BI",
+        "bannerImage": "https://i.postimg.cc/C53BHFf0/business-data-analysis.jpg",
         "location": "Remote",
         "salary": "$80,000 - $105,000",
         "jobType": "Full-time",
         "description": "Build dashboards and BI reports.",
-        "requirement_skill": ["Power BI", "SQL", "ETL"]
+        "requirement_skill": [
+          "Power BI",
+          "SQL",
+          "ETL"
+        ]
       },
       {
         "id": "job021",
         "title": "Database Administrator",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=DBA",
+        "bannerImage": "https://i.postimg.cc/QCykLG9Y/3852751.jpg",
         "location": "Chicago, IL",
         "salary": "$85,000 - $110,000",
         "jobType": "Full-time",
         "description": "Manage financial databases securely.",
-        "requirement_skill": ["Oracle", "MySQL", "Backup/Recovery"]
+        "requirement_skill": [
+          "Oracle",
+          "MySQL",
+          "Backup/Recovery"
+        ]
       },
       {
         "id": "job022",
         "title": "Risk Manager",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Risk",
+        "bannerImage": "https://i.postimg.cc/C53BHFf0/business-data-analysis.jpg",
         "location": "Chicago, IL",
         "salary": "$90,000 - $115,000",
         "jobType": "Full-time",
         "description": "Evaluate and mitigate financial risks.",
-        "requirement_skill": ["Risk Analysis", "Compliance", "Statistics"]
+        "requirement_skill": [
+          "Risk Analysis",
+          "Compliance",
+          "Statistics"
+        ]
       },
       {
         "id": "job023",
         "title": "Quantitative Researcher",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Quant",
+        "bannerImage": "https://i.postimg.cc/QCykLG9Y/3852751.jpg",
         "location": "Remote",
         "salary": "$100,000 - $130,000",
         "jobType": "Full-time",
         "description": "Conduct research and quantitative modeling.",
-        "requirement_skill": ["Python", "R", "Statistics"]
+        "requirement_skill": [
+          "Python",
+          "R",
+          "Statistics"
+        ]
       }
     ]
   },
   {
     "id": "comp004",
     "name": "MediCare Plus",
-    "logo": "https://via.placeholder.com/100x100.png?text=MediCare",
+    "logo": "https://i.postimg.cc/SxfcyhC1/Company4.png",
     "location": "Boston, MA",
     "website": "https://www.medicareplus.com",
     "industry": "Healthcare",
@@ -270,69 +372,93 @@
       {
         "id": "job024",
         "title": "Nurse Practitioner",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Nurse",
+        "bannerImage": "https://i.postimg.cc/t4jGZY45/hush-naidoo-jade-photography-yo01-Z-9-HQAw-unsplash.jpg",
         "location": "Boston, MA",
         "salary": "$80,000 - $100,000",
         "jobType": "Full-time",
         "description": "Provide advanced nursing services.",
-        "requirement_skill": ["Nursing", "Patient Care", "Medical Knowledge"]
+        "requirement_skill": [
+          "Nursing",
+          "Patient Care",
+          "Medical Knowledge"
+        ]
       },
       {
         "id": "job025",
         "title": "Medical Assistant",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Assistant",
+        "bannerImage": "https://i.postimg.cc/zDCjDB45/myriam-zilles-Klto-LK6-Mk-g-unsplash.jpg",
         "location": "Boston, MA",
         "salary": "$35,000 - $50,000",
         "jobType": "Full-time",
         "description": "Support doctors with patient care.",
-        "requirement_skill": ["Patient Care", "Medical Records", "Communication"]
+        "requirement_skill": [
+          "Patient Care",
+          "Medical Records",
+          "Communication"
+        ]
       },
       {
         "id": "job026",
         "title": "Healthcare Administrator",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Admin",
+        "bannerImage": "https://i.postimg.cc/MT4hWGL1/nappy-F6-ESFfp-Hj-Yc-unsplash.jpg",
         "location": "Boston, MA",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
         "description": "Manage healthcare facility operations.",
-        "requirement_skill": ["Management", "Healthcare", "Planning"]
+        "requirement_skill": [
+          "Management",
+          "Healthcare",
+          "Planning"
+        ]
       },
       {
         "id": "job027",
         "title": "Pharmacist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Pharmacist",
+        "bannerImage": "https://i.postimg.cc/PJT1vW0H/national-cancer-institute-82-BHTkmk-Df-U-unsplash.jpg",
         "location": "Boston, MA",
         "salary": "$100,000 - $120,000",
         "jobType": "Full-time",
         "description": "Prepare and dispense medication.",
-        "requirement_skill": ["Pharmacy", "Attention to Detail", "Medical Knowledge"]
+        "requirement_skill": [
+          "Pharmacy",
+          "Attention to Detail",
+          "Medical Knowledge"
+        ]
       },
       {
         "id": "job028",
         "title": "Lab Technician",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Lab",
+        "bannerImage": "https://i.postimg.cc/SsWWKTTV/national-cancer-institute-NFvd-KIhx-Yl-U-unsplash.jpg",
         "location": "Boston, MA",
         "salary": "$50,000 - $65,000",
         "jobType": "Full-time",
         "description": "Conduct medical lab tests.",
-        "requirement_skill": ["Lab Work", "Accuracy", "Reporting"]
+        "requirement_skill": [
+          "Lab Work",
+          "Accuracy",
+          "Reporting"
+        ]
       },
       {
         "id": "job029",
         "title": "Psychologist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Psych",
+        "bannerImage": "https://i.postimg.cc/YCsNDmLN/online-marketing-h-Igeo-Qj-S-i-E-unsplash.jpg",
         "location": "Boston, MA",
         "salary": "$90,000 - $115,000",
         "jobType": "Full-time",
         "description": "Provide mental health therapy.",
-        "requirement_skill": ["Psychology", "Empathy", "Counseling"]
+        "requirement_skill": [
+          "Psychology",
+          "Empathy",
+          "Counseling"
+        ]
       }
     ]
   },
   {
     "id": "comp005",
     "name": "SkyHigh Studios",
-    "logo": "https://via.placeholder.com/100x100.png?text=SkyHigh",
+    "logo": "https://i.postimg.cc/9fXZ0nBm/Company5.png",
     "location": "Los Angeles, CA",
     "website": "https://www.skyhighstudios.com",
     "industry": "Media & Entertainment",
@@ -340,79 +466,107 @@
       {
         "id": "job030",
         "title": "Graphic Designer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Design",
+        "bannerImage": "https://i.postimg.cc/NF8Vcxvr/abishanth-ahilan-0-F-txnh8k28-unsplash.jpg",
         "location": "Remote",
         "salary": "$45,000 - $65,000",
         "jobType": "Full-time",
         "description": "Design visuals for film and digital media.",
-        "requirement_skill": ["Photoshop", "Illustrator", "Creativity"]
+        "requirement_skill": [
+          "Photoshop",
+          "Illustrator",
+          "Creativity"
+        ]
       },
       {
         "id": "job031",
         "title": "Video Editor",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Editor",
+        "bannerImage": "https://i.postimg.cc/XqTMjvpT/gr-stocks-q8-P8-Yo-R6erg-unsplash.jpg",
         "location": "Los Angeles, CA",
         "salary": "$50,000 - $70,000",
         "jobType": "Full-time",
         "description": "Edit and produce engaging video content.",
-        "requirement_skill": ["Premiere Pro", "After Effects", "Storytelling"]
+        "requirement_skill": [
+          "Premiere Pro",
+          "After Effects",
+          "Storytelling"
+        ]
       },
       {
         "id": "job032",
         "title": "Sound Engineer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Sound",
+        "bannerImage": "https://i.postimg.cc/brGcfnNx/indra-projects-n-NNCmn-Y5-Kls-unsplash.jpg",
         "location": "Los Angeles, CA",
         "salary": "$55,000 - $75,000",
         "jobType": "Full-time",
         "description": "Mix and master audio tracks.",
-        "requirement_skill": ["Pro Tools", "Audio Mixing", "Creativity"]
+        "requirement_skill": [
+          "Pro Tools",
+          "Audio Mixing",
+          "Creativity"
+        ]
       },
       {
         "id": "job033",
         "title": "Animator",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Animation",
+        "bannerImage": "https://i.postimg.cc/dtyPWGfv/jakub-zerdzicki-ss-Dr-sfs-AKs-unsplash.jpg",
         "location": "Remote",
         "salary": "$60,000 - $85,000",
         "jobType": "Full-time",
         "description": "Create 2D and 3D animations.",
-        "requirement_skill": ["Maya", "Blender", "Animation"]
+        "requirement_skill": [
+          "Maya",
+          "Blender",
+          "Animation"
+        ]
       },
       {
         "id": "job034",
         "title": "Script Writer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Writer",
+        "bannerImage": "https://i.postimg.cc/9fpjdVn7/jakub-zerdzicki-Us-EIMm-EU57o-unsplash.jpg",
         "location": "Los Angeles, CA",
         "salary": "$50,000 - $70,000",
         "jobType": "Full-time",
         "description": "Write scripts for films and series.",
-        "requirement_skill": ["Writing", "Storytelling", "Creativity"]
+        "requirement_skill": [
+          "Writing",
+          "Storytelling",
+          "Creativity"
+        ]
       },
       {
         "id": "job035",
         "title": "Production Assistant",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=PA",
+        "bannerImage": "https://i.postimg.cc/x1VrBcrm/kamil-switalski-JLLVHk-Xf-Sok-unsplash.jpg",
         "location": "Los Angeles, CA",
         "salary": "$35,000 - $45,000",
         "jobType": "Full-time",
         "description": "Assist in media production tasks.",
-        "requirement_skill": ["Organization", "Teamwork", "Adaptability"]
+        "requirement_skill": [
+          "Organization",
+          "Teamwork",
+          "Adaptability"
+        ]
       },
       {
         "id": "job036",
         "title": "Marketing Coordinator",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Marketing",
+        "bannerImage": "https://i.postimg.cc/C1TmxfNC/nmg-network-t-S8-UGM0pvm-I-unsplash.jpg",
         "location": "Remote",
         "salary": "$40,000 - $55,000",
         "jobType": "Full-time",
         "description": "Promote studio’s projects.",
-        "requirement_skill": ["SEO", "Content Marketing", "Social Media"]
+        "requirement_skill": [
+          "SEO",
+          "Content Marketing",
+          "Social Media"
+        ]
       }
     ]
   },
   {
     "id": "comp006",
     "name": "UrbanEats",
-    "logo": "https://via.placeholder.com/100x100.png?text=UrbanEats",
+    "logo": "https://i.postimg.cc/jj8N748z/Company6.png",
     "location": "New York, NY",
     "website": "https://www.urbaneats.com",
     "industry": "Food & Delivery",
@@ -420,102 +574,142 @@
       {
         "id": "job037",
         "title": "Delivery Driver",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Driver",
+        "bannerImage": "https://i.postimg.cc/PfwzqMVB/anastasiia-t-Cfx-UBKx9i-E-unsplash.jpg",
         "location": "New York, NY",
         "salary": "$30,000 - $40,000",
         "jobType": "Full-time",
         "description": "Deliver food orders to customers.",
-        "requirement_skill": ["Driving", "Navigation", "Customer Service"]
+        "requirement_skill": [
+          "Driving",
+          "Navigation",
+          "Customer Service"
+        ]
       },
       {
         "id": "job038",
         "title": "Chef",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Chef",
+        "bannerImage": "https://i.postimg.cc/sDWhc09c/aziz-abdul-n-C0rb-Ye-GYq-A-unsplash.jpg",
         "location": "New York, NY",
         "salary": "$50,000 - $70,000",
         "jobType": "Full-time",
         "description": "Cook delicious meals.",
-        "requirement_skill": ["Cooking", "Creativity", "Time Management"]
+        "requirement_skill": [
+          "Cooking",
+          "Creativity",
+          "Time Management"
+        ]
       },
       {
         "id": "job039",
         "title": "Customer Service Rep",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=CSR",
+        "bannerImage": "https://i.postimg.cc/XX6Xm4cg/elias-ek-v-CHd2-Ubexq-U-unsplash.jpg",
         "location": "Remote",
         "salary": "$35,000 - $50,000",
         "jobType": "Full-time",
         "description": "Handle customer inquiries and complaints.",
-        "requirement_skill": ["Communication", "Problem Solving", "Patience"]
+        "requirement_skill": [
+          "Communication",
+          "Problem Solving",
+          "Patience"
+        ]
       },
       {
         "id": "job040",
         "title": "Restaurant Manager",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Manager",
+        "bannerImage": "https://i.postimg.cc/JntxKVqn/leo-roza-ZUQ9-ra-Oiac-unsplash.jpg",
         "location": "New York, NY",
         "salary": "$60,000 - $80,000",
         "jobType": "Full-time",
         "description": "Oversee restaurant operations.",
-        "requirement_skill": ["Leadership", "Finance", "Customer Service"]
+        "requirement_skill": [
+          "Leadership",
+          "Finance",
+          "Customer Service"
+        ]
       },
       {
         "id": "job041",
         "title": "Marketing Specialist",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Marketing",
+        "bannerImage": "https://i.postimg.cc/3wt9gJ2V/maxim-tolchinskiy-k9rfkzc-Yy8-unsplash.jpg",
         "location": "Remote",
         "salary": "$40,000 - $55,000",
         "jobType": "Full-time",
         "description": "Run food delivery campaigns.",
-        "requirement_skill": ["SEO", "Social Media", "Advertising"]
+        "requirement_skill": [
+          "SEO",
+          "Social Media",
+          "Advertising"
+        ]
       },
       {
         "id": "job042",
         "title": "Food Photographer",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Photo",
+        "bannerImage": "https://i.postimg.cc/XYVwQ6Nb/murat-ts-b-IS1c-Oi-Oto0-unsplash.jpg",
         "location": "Remote",
         "salary": "$30,000 - $45,000",
         "jobType": "Part-time",
         "description": "Take food pictures for ads.",
-        "requirement_skill": ["Photography", "Editing", "Creativity"]
+        "requirement_skill": [
+          "Photography",
+          "Editing",
+          "Creativity"
+        ]
       },
       {
         "id": "job043",
         "title": "Data Analyst",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Data",
+        "bannerImage": "https://i.postimg.cc/DZDgMjjc/omer-taha-cetin-j-G4-Nl-Ph7-O4-unsplash.jpg",
         "location": "Remote",
         "salary": "$55,000 - $75,000",
         "jobType": "Full-time",
         "description": "Analyze delivery trends.",
-        "requirement_skill": ["SQL", "Python", "Excel"]
+        "requirement_skill": [
+          "SQL",
+          "Python",
+          "Excel"
+        ]
       },
       {
         "id": "job044",
         "title": "Operations Coordinator",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Ops",
+        "bannerImage": "https://i.postimg.cc/FKrkhFtW/romeo-a-SVu-Pi45-WRj-I-unsplash.jpg",
         "location": "New York, NY",
         "salary": "$45,000 - $60,000",
         "jobType": "Full-time",
         "description": "Coordinate restaurant and delivery schedules.",
-        "requirement_skill": ["Logistics", "Teamwork", "Planning"]
+        "requirement_skill": [
+          "Logistics",
+          "Teamwork",
+          "Planning"
+        ]
       },
       {
         "id": "job045",
         "title": "Sous Chef",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=SousChef",
+        "bannerImage": "https://i.postimg.cc/g2dKQ6D1/ryoo-geon-uk-L9z5v9-Tzi3-M-unsplash.jpg",
         "location": "New York, NY",
         "salary": "$45,000 - $60,000",
         "jobType": "Full-time",
         "description": "Assist the head chef in cooking.",
-        "requirement_skill": ["Cooking", "Teamwork", "Creativity"]
+        "requirement_skill": [
+          "Cooking",
+          "Teamwork",
+          "Creativity"
+        ]
       },
       {
         "id": "job046",
         "title": "Warehouse Associate",
-        "bannerImage": "https://via.placeholder.com/600x200.png?text=Warehouse",
+        "bannerImage": "https://i.postimg.cc/tRZDxbJv/scarbor-siu-JCpvqp-HK4n-A-unsplash.jpg",
         "location": "New Jersey, NJ",
         "salary": "$35,000 - $45,000",
         "jobType": "Full-time",
         "description": "Manage food supplies and inventory.",
-        "requirement_skill": ["Inventory", "Organization", "Teamwork"]
+        "requirement_skill": [
+          "Inventory",
+          "Organization",
+          "Teamwork"
+        ]
       }
     ]
   }
