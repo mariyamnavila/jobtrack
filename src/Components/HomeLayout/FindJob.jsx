@@ -26,7 +26,7 @@ const FindJob = () => {
         })
 
         gsap.from('#find', {
-            yPercent: 100,
+            y: 70,
             duration: 1.5,
             stagger: 0.1,
             opacity: 0,

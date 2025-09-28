@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home";
 import HomeLayout from "../Layouts/HomeLayout";
-import CompanyJobList from "../Components/CompanyJobList";
+import CompanyJobList from "../Pages/CompanyJobList";
 import Loading from "../Components/Loading";
+import AppliedJobs from "../Pages/AppliedJobs";
 
 
 async function mainLoader() {
@@ -43,7 +44,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/appliedJobs',
-                element: <p>statistics</p>
+                element: <AppliedJobs></AppliedJobs>,
+                loader: ()=>fetch('/jobList.json'),
+                hydrateFallbackElement: <Loading></Loading>
             },
         ]
     },

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import SingleJob from "./SingleJob";
+import SingleJob from "../Components/SingleJob";
 import { IoArrowBackOutline } from "react-icons/io5";
 
 const CompanyJobList = () => {

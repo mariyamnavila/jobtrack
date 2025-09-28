@@ -6,13 +6,23 @@ const JobsProvider = ({ children }) => {
         const saved = localStorage.getItem('jobs');
         if (saved) {
             return (JSON.parse(saved));
-        }});
+        }
+        else{
+            return []
+        }
+    });
     useEffect(() => {
         localStorage.setItem('jobs', JSON.stringify(jobs))
     }, [jobs])
+    const removeItem = (id) => {
+        const removed = jobs?.filter(job => job !== id);
+        setJobs(removed)
+        localStorage.setItem('jobs', JSON.stringify(removed));
+    }
     const jobData = {
         jobs,
         setJobs,
+        removeItem
     }
     return <JobsContext.Provider value={jobData}>
         {children}
