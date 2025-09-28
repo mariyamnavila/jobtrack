@@ -4,6 +4,8 @@ import HomeLayout from "../Layouts/HomeLayout";
 import CompanyJobList from "../Pages/CompanyJobList";
 import Loading from "../Components/Loading";
 import AppliedJobs from "../Pages/AppliedJobs";
+import AuthLayout from "../Layouts/AuthLayout";
+import Login from "../Pages/Login";
 
 
 async function mainLoader() {
@@ -52,7 +54,17 @@ const router = createBrowserRouter([
     },
     {
         path: '/auth',
-        element: <p>Auth</p>,
+        element: <AuthLayout></AuthLayout>,
+        children:[
+            {
+                path: '/auth/register',
+                element: <p>statistics</p>
+            },
+            {
+                path: '/auth/login',
+                element: <Login></Login>
+            },
+        ]
     },
     {
         path: '*',

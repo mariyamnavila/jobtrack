@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/Logo.png';
 const Navbar = () => {
 
@@ -34,14 +34,15 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end space-x-2.5">
                     <div className="w-10 mr-2">
-                        <img
+                        {/* <img
                             className="rounded-full"
                             alt="Tailwind CSS Navbar component"
-                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" /> */}
                     </div>
-                    <a className="btn btn-primary hover:bg-[#1d553c]">Login</a>
+                    {/* <Link to={'/auth/register'} className="btn btn-primary hover:bg-[#1d553c]">Register</Link> */}
+                    <Link to={'/auth/login'} className="btn btn-primary hover:bg-[#1d553c]">Login</Link>
                 </div>
             </div>
         </div>
