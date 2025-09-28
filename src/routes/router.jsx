@@ -6,6 +6,7 @@ import Loading from "../Components/Loading";
 import AppliedJobs from "../Pages/AppliedJobs";
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 
 async function mainLoader() {
@@ -58,7 +59,7 @@ const router = createBrowserRouter([
         children:[
             {
                 path: '/auth/register',
-                element: <p>statistics</p>
+                element: <Register></Register>
             },
             {
                 path: '/auth/login',

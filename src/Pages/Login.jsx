@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen">
+        <div className="flex justify-center items-center min-h-screen my-8">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
                 <p className="font-medium text-xs text-center mb-3 text-secondary">Welcome Back!</p>
                 <h2 className="font-semibold text-2xl text-center mx-5 text-success">Login your Account</h2>

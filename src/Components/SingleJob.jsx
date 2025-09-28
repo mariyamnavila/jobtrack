@@ -14,7 +14,13 @@ const SingleJob = ({ job, logo }) => {
         }
     }
     console.log(jobs);
-    const { title, bannerImage, location, salary, jobType, description, requirement_skill } = job;
+    const { title, 
+        bannerImage, 
+        location, 
+        salary, 
+        jobType, 
+        description, 
+        requirement_skill } = job;
     return (
         <div className="bg-base-100 hover:bg-white border border-base-200 p-5 rounded-lg m-3 hover:shadow-sm space-y-2 transform transition duration-300 hover:-translate-y-1">
             <div className="flex justify-between items-center">
