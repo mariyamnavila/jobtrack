@@ -7,7 +7,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
     const [error, setError] = useState('')
-    const { signIn, signInWithGoogle, setUser, user } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, setUser, user, setLoading } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
     const handleLogin = (e) => {
@@ -21,17 +21,16 @@ const Login = () => {
             .catch((error) => {
                 setError(error.code)
             })
+            .finally(() => setLoading(false));
     }
     const googleProvider = new GoogleAuthProvider();
 
     const handleGoogleSignIn = (provider) => {
         signInWithGoogle(provider)
             .then((result) => {
-                console.log(result.user.displayName, result.user.photoURL);
                 const name = result?.user?.displayName
                 const photo = result?.user?.photoURL
-                console.log(name,photo);
-                    setUser({ ...user, displayName: name, photoURL: photo })
+                setUser({ ...user, displayName: name, photoURL: photo })
                 navigate(`${location.state ? location.state : '/'}`)
             })
             .catch((error) => {

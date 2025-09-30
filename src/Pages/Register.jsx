@@ -5,7 +5,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
 
 const Register = () => {
-    const { createUser, setUser, updateUser, user } = useContext(AuthContext);
+    const { createUser, setUser, updateUser, user, setLoading } = useContext(AuthContext);
     const [nameError, setNameError] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate()
@@ -36,6 +36,7 @@ const Register = () => {
             .catch((error) => {
                 setError(error.message)
             })
+            .finally(() => setLoading(false));
     }
     return (
         <div className="flex justify-center items-center min-h-screen my-8">

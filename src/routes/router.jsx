@@ -56,9 +56,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/profile',
-                element: <PrivateRoute>
-                    <ProfilePage></ProfilePage>
-                </PrivateRoute>,
+                element:
+                    <ProfilePage></ProfilePage>,
                 hydrateFallbackElement: <Loading></Loading>
             },
             {

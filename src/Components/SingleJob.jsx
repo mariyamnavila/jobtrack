@@ -82,7 +82,7 @@ const SingleJob = ({ job, logo }) => {
                             </div>
                             <p className="font-bold text-2xl text-success hover:text-secondary">{title}</p>
                             <p className="text-neutral font-medium">{description}</p>
-                            <div className="text-[#8fae99] border-y border-dashed py-2 my-3 border-secondary">
+                            <div className="text-[#8fae99] py-2 my-3 border-secondary">
                                 <p className="flex items-center"><MdAttachMoney className="mx-1 text-xl" />{salary}</p>
                                 <p className="flex items-center"><IoLocationOutline className="mx-1 text-xl" />{location}</p>
                                 <p className="flex items-center"> <GrBriefcase className="mr-2 ml-2" />{jobType}</p>
