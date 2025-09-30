@@ -4,13 +4,27 @@ import { GrBriefcase } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdAttachMoney, MdDeleteOutline } from "react-icons/md";
 import { JobsContext } from "../Provider/JobsProvider";
+import { toast } from "react-toastify";
 
 const AppliedJob = ({ job, removeItemFromState }) => {
 
     const { removeItem } = useContext(JobsContext)
 
     const { title, salary, jobType, id } = job;
-    
+    const notify = () => {
+        toast.error('This job is deleted', {
+            zIndex: 9999,
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            // transition: Bounce,
+        })
+    }
     return (
         <div className="bg-base-100 hover:bg-white border border-base-200 p-5 rounded-lg m-3  space-y-2 hover:shadow-sm transform transition duration-300 hover:-translate-y-1">
             <div className="flex justify-between items-center">
@@ -51,7 +65,7 @@ const AppliedJob = ({ job, removeItemFromState }) => {
                         }
                     </div> */}
                     <div className=" justify-end hidden md:flex">
-                        <button onClick={() => { removeItem(id),removeItemFromState(id) }} className=" bg-info rounded-full text-white text-xl w-fit p-3 hover:shadow-md shadow-green-900 transform transition duration-300 hover:-translate-y-1"><MdDeleteOutline /></button>
+                        <button onClick={() => { removeItem(id), removeItemFromState(id),notify() }} className=" bg-info rounded-full text-white text-xl w-fit p-3 hover:shadow-md shadow-green-900 transform transition duration-300 hover:-translate-y-1"><MdDeleteOutline /></button>
                         {/* <button onClick={() => document.getElementById(`my_modal_${job.id}`).showModal()} className="btn btn-info text-white w-fit">Details</button> */}
                     </div>
                     {/* <dialog id={`my_modal_${job.id}`} className="modal modal-bottom sm:modal-middle">

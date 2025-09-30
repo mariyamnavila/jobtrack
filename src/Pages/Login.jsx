@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
 import { GoogleAuthProvider } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Login = () => {
     const [error, setError] = useState('')
@@ -17,6 +18,18 @@ const Login = () => {
         signIn(email, password)
             .then((result) => {
                 navigate(`${location.state ? location.state : '/'}`)
+                toast.success('Successfully Logged in', {
+                    zIndex: 9999,
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    // transition: Bounce,
+                })
             })
             .catch((error) => {
                 setError(error.code)

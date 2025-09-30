@@ -6,6 +6,7 @@ import { MdAttachMoney } from "react-icons/md";
 import { JobsContext } from "../Provider/JobsProvider";
 import { Navigate, useNavigate, } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import { toast, ToastContainer } from "react-toastify";
 
 
 const SingleJob = ({ job, logo }) => {
@@ -16,6 +17,31 @@ const SingleJob = ({ job, logo }) => {
         if (user) {
             if (!jobs.includes(id)) {
                 setJobs([...jobs, id]);
+                toast.success("This job is applied", {
+                    zIndex: 9999,
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    // transition: Bounce,
+                });
+            } else if (jobs.includes(id)) {
+                toast.error("This job is already applied", {
+                    zIndex: 9999,
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    // transition: Bounce,
+                });
             }
         }
         else {
@@ -76,7 +102,7 @@ const SingleJob = ({ job, logo }) => {
                         <button onClick={() => document.getElementById(`my_modal_${job.id}`).showModal()} className="btn btn-info text-white w-fit">Details</button>
                     </div>
                     <dialog id={`my_modal_${job.id}`} className="modal modal-bottom sm:modal-middle">
-                        <div className="modal-box space-y-2">
+                        <div className="modal-box space-y-2 relative">
                             <div>
                                 <img className="w-full h-[300px] object-cover mt-5 rounded-xl" src={bannerImage} alt="" />
                             </div>
@@ -105,6 +131,7 @@ const SingleJob = ({ job, logo }) => {
                                 </form>
                             </div>
                         </div>
+                        <ToastContainer/>
                     </dialog>
                 </div>
             </div>

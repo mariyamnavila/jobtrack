@@ -2,15 +2,38 @@ import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/Logo.png';
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { toast } from "react-toastify";
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                alert('you logged Out ')
+                toast.error('you logged Out ', {
+                    zIndex: 9999,
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    // transition: Bounce,
+                })
             })
             .catch((error) => {
-                alert(error);
+                toast.error(error, {
+                    zIndex: 9999,
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    // transition: Bounce,
+                });
             })
     }
 

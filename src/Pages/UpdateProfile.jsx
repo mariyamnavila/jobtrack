@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { toast } from "react-toastify";
 
 const UpdateProfile = () => {
     const { setUser, updateUser, user } = useContext(AuthContext);
@@ -21,6 +22,18 @@ const UpdateProfile = () => {
         updateUser({ displayName: name, photoURL: photo })
             .then(() => {
                 setUser({ ...user, displayName: name, photoURL: photo })
+                toast.success('Profile Updated', {
+                    zIndex: 9999,
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    // transition: Bounce,
+                })
                 navigate('/')
             })
             .catch((error) => {

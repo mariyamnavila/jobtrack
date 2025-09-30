@@ -3,6 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
+import { toast } from "react-toastify";
 
 const Register = () => {
     const { createUser, setUser, updateUser, user, setLoading } = useContext(AuthContext);
@@ -26,6 +27,18 @@ const Register = () => {
                 updateUser({ displayName: name, photoURL: photo })
                     .then(() => {
                         setUser({ ...user, displayName: name, photoURL: photo })
+                        toast.success('Successfully register is done', {
+                            zIndex: 9999,
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: false,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                            // transition: Bounce,
+                        })
                         navigate('/')
                     })
                     .catch((error) => {

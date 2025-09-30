@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import SingleJob from "../Components/SingleJob";
 import { IoArrowBackOutline } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 
 const CompanyJobList = () => {
     const companies = useLoaderData();
@@ -11,9 +12,12 @@ const CompanyJobList = () => {
         const actualCompany = companies.find(company => company.id == companyId.id);
         setCompany(actualCompany)
     }, [companies, companyId])
-    const { name, location, industry, jobs,logo } = company;
+    const { name, location, industry, jobs, logo } = company;
     return (
         <div className="container mx-auto my-5 ">
+            <Helmet>
+                <title>Available Jobs | JobTrack </title>
+            </Helmet>
             <div className="flex flex-col justify-center items-center space-y-1 bg-base-100 rounded-2xl py-7 mx-6">
                 <h2 className="text-success text-2xl font-semibold">{name}</h2>
                 <p className="text-neutral ">{industry}</p>
@@ -25,7 +29,7 @@ const CompanyJobList = () => {
             </div>
             <div className="mx-3">
                 {
-                    jobs?.map(job =><SingleJob key={job.id} job={job} logo={logo}></SingleJob>)
+                    jobs?.map(job => <SingleJob key={job.id} job={job} logo={logo}></SingleJob>)
                 }
             </div>
             <div className="mx-6">
