@@ -3,10 +3,11 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
     const [error, setError] = useState('')
-    const { signIn } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, setUser, user } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
     const handleLogin = (e) => {
@@ -15,6 +16,22 @@ const Login = () => {
         const password = e.target.password.value
         signIn(email, password)
             .then((result) => {
+                navigate(`${location.state ? location.state : '/'}`)
+            })
+            .catch((error) => {
+                setError(error.code)
+            })
+    }
+    const googleProvider = new GoogleAuthProvider();
+
+    const handleGoogleSignIn = (provider) => {
+        signInWithGoogle(provider)
+            .then((result) => {
+                console.log(result.user.displayName, result.user.photoURL);
+                const name = result?.user?.displayName
+                const photo = result?.user?.photoURL
+                console.log(name,photo);
+                    setUser({ ...user, displayName: name, photoURL: photo })
                 navigate(`${location.state ? location.state : '/'}`)
             })
             .catch((error) => {
@@ -33,7 +50,7 @@ const Login = () => {
                 <form
                     onSubmit={handleLogin}
                     className="card-body">
-                    <button className="btn w-full bg-white flex items-center"><FcGoogle />  Login with Google</button>
+                    <button onClick={() => { handleGoogleSignIn(googleProvider) }} className="btn w-full bg-white flex items-center"><FcGoogle />  Login with Google</button>
                     <div className="divider text-xs">Or continue with </div>
                     <fieldset className="fieldset">
                         {/* email */}

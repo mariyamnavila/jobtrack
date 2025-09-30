@@ -50,8 +50,8 @@ const Register = () => {
                     onSubmit={handleRegister}
                     className="card-body">
                     <fieldset className="fieldset">
-                        <button className="btn w-full bg-white flex items-center"><FcGoogle />  Register with Google</button>
-                        <div className="divider text-xs">Or continue with </div>
+                        {/* <button className="btn w-full bg-white flex items-center"><FcGoogle />  Register with Google</button>
+                        <div className="divider text-xs">Or continue with </div> */}
                         {/* Name */}
                         <label className="label">Name</label>
                         <input
