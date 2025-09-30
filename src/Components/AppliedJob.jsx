@@ -4,9 +4,13 @@ import { GrBriefcase } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdAttachMoney, MdDeleteOutline } from "react-icons/md";
 import { JobsContext } from "../Provider/JobsProvider";
+
 const AppliedJob = ({ job, removeItemFromState }) => {
+
     const { removeItem } = useContext(JobsContext)
+
     const { title, salary, jobType, id } = job;
+    
     return (
         <div className="bg-base-100 hover:bg-white border border-base-200 p-5 rounded-lg m-3  space-y-2 hover:shadow-sm transform transition duration-300 hover:-translate-y-1">
             <div className="flex justify-between items-center">

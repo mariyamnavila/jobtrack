@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist",
+    "site": "jobtrack-b425e",
     "ignore": [
       "firebase.json",
       "**/.*",

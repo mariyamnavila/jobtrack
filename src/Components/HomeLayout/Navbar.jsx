@@ -1,12 +1,29 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/Logo.png';
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                alert('you logged Out ')
+            })
+            .catch((error) => {
+                alert(error);
+            })
+    }
 
     const links = <>
         <li className="text-base-300"><NavLink to={'/'}>Home</NavLink></li>
         <li className="text-base-300"><NavLink to={'/blog'}>Blog</NavLink></li>
         <li className="text-base-300"><NavLink to={'/statistics'}>Statistic</NavLink></li>
-        <li className="text-base-300"><NavLink to={'/appliedJobs'}>Applied Jobs</NavLink></li>
+        {
+            user ?
+                <li className="text-base-300"><NavLink to={'/appliedJobs'}>Applied Jobs</NavLink></li>
+                :
+                <></>
+        }
     </>
 
     return (
@@ -36,13 +53,20 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end space-x-2.5">
                     <div className="w-10 mr-2">
-                        {/* <img
-                            className="rounded-full"
-                            alt="Tailwind CSS Navbar component"
-                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" /> */}
+                        <Link to={'/profile'}>
+                            <img
+                                className="rounded-full"
+                                alt=""
+                                src={user && user.photoURL}
+                            />
+                        </Link>
                     </div>
                     {/* <Link to={'/auth/register'} className="btn btn-primary hover:bg-[#1d553c]">Register</Link> */}
-                    <Link to={'/auth/login'} className="btn btn-primary hover:bg-[#1d553c]">Login</Link>
+                    {
+                        user
+                            ? <button onClick={handleLogOut} className="btn btn-primary hover:bg-[#1d553c]">Log Out</button>
+                            : <Link to={'/auth/login'} className="btn btn-primary hover:bg-[#1d553c]">Login</Link>
+                    }
                 </div>
             </div>
         </div>

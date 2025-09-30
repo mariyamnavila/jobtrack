@@ -1,7 +1,25 @@
+import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
+    const [error, setError] = useState('')
+    const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate()
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value
+        const password = e.target.password.value
+        signIn(email, password)
+            .then((result) => {
+                navigate(`${location.state ? location.state : '/'}`)
+            })
+            .catch((error) => {
+                setError(error.code)
+            })
+    }
     return (
         <div className="flex justify-center items-center min-h-screen my-8">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
@@ -9,10 +27,10 @@ const Login = () => {
                 <h2 className="font-semibold text-2xl text-center mx-5 text-success">Login your Account</h2>
                 <p className="text-xs text-center mt-2">Access to all features. No credit card required.</p>
                 <form
-                    // onSubmit={handleLogin}
+                    onSubmit={handleLogin}
                     className="card-body">
-                <button className="btn w-full bg-white flex items-center"><FcGoogle />  Login with Google</button>
-                <div class="divider text-xs">Or continue with </div>
+                    <button className="btn w-full bg-white flex items-center"><FcGoogle />  Login with Google</button>
+                    <div className="divider text-xs">Or continue with </div>
                     <fieldset className="fieldset">
                         {/* email */}
                         <label className="label">Email</label>
@@ -33,9 +51,9 @@ const Login = () => {
                             required
                         />
                         <div><a className="link link-hover">Forgot password?</a></div>
-                        {/* {
-                            error && <p className="text-red-500 text-xs">{error}</p>
-                        } */}
+                        {
+                            error && <p className="text-accent text-xs">{error}</p>
+                        }
                         <button type="submit" className="btn btn-primary mt-4">Login</button>
                         <p className="font-semibold text-center pt-4">Don’t Have An Account ? <Link to={'/auth/register'} className="text-secondary">Register</Link></p>
                     </fieldset>

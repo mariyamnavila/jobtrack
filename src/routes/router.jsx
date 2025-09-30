@@ -7,6 +7,9 @@ import AppliedJobs from "../Pages/AppliedJobs";
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivateRoute from "../Provider/PrivateRoute";
+import ProfilePage from "../Pages/ProfilePage";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 
 async function mainLoader() {
@@ -34,7 +37,7 @@ const router = createBrowserRouter([
             {
                 path: '/company/:id',
                 element: <CompanyJobList></CompanyJobList>,
-                loader: ()=>fetch('/jobList.json'),
+                loader: () => fetch('/jobList.json'),
                 hydrateFallbackElement: <Loading></Loading>
             },
             {
@@ -47,8 +50,24 @@ const router = createBrowserRouter([
             },
             {
                 path: '/appliedJobs',
-                element: <AppliedJobs></AppliedJobs>,
-                loader: ()=>fetch('/jobList.json'),
+                element: <PrivateRoute>
+                    <AppliedJobs></AppliedJobs>
+                </PrivateRoute>,
+                loader: () => fetch('/jobList.json'),
+                hydrateFallbackElement: <Loading></Loading>
+            },
+            {
+                path: '/profile',
+                element: <PrivateRoute>
+                    <ProfilePage></ProfilePage>
+                </PrivateRoute>,
+                hydrateFallbackElement: <Loading></Loading>
+            },
+            {
+                path: '/updateProfile',
+                element: <PrivateRoute>
+                    <UpdateProfile></UpdateProfile>
+                </PrivateRoute>,
                 hydrateFallbackElement: <Loading></Loading>
             },
         ]
@@ -56,7 +75,7 @@ const router = createBrowserRouter([
     {
         path: '/auth',
         element: <AuthLayout></AuthLayout>,
-        children:[
+        children: [
             {
                 path: '/auth/register',
                 element: <Register></Register>

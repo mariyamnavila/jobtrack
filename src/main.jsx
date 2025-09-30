@@ -4,11 +4,14 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import router from './routes/router.jsx'
 import JobsProvider from './Provider/JobsProvider.jsx'
+import AuthProvider from './Provider/AuthProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <JobsProvider>
-      <RouterProvider router={router} />
-    </JobsProvider>
+    <AuthProvider>
+      <JobsProvider>
+        <RouterProvider router={router} />
+      </JobsProvider>
+    </AuthProvider>
   </StrictMode>,
 )

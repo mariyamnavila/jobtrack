@@ -4,22 +4,30 @@ import { GrBriefcase } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdAttachMoney } from "react-icons/md";
 import { JobsContext } from "../Provider/JobsProvider";
+import { Navigate, useNavigate, } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const SingleJob = ({ job, logo }) => {
-    const { jobs, setJobs} = useContext(JobsContext);
+    const { user } = useContext(AuthContext)
+    const { jobs, setJobs } = useContext(JobsContext);
+    const navigate = useNavigate()
     const handleJobs = (id) => {
-        if (!jobs.includes(id)) {
-            setJobs([...jobs, id]);
+        if (user) {
+            if (!jobs.includes(id)) {
+                setJobs([...jobs, id]);
+            }
+        }
+        else {
+            navigate('/auth/login')
         }
     }
-    console.log(jobs);
-    const { title, 
-        bannerImage, 
-        location, 
-        salary, 
-        jobType, 
-        description, 
+    const { title,
+        bannerImage,
+        location,
+        salary,
+        jobType,
+        description,
         requirement_skill } = job;
     return (
         <div className="bg-base-100 hover:bg-white border border-base-200 p-5 rounded-lg m-3 hover:shadow-sm space-y-2 transform transition duration-300 hover:-translate-y-1">
