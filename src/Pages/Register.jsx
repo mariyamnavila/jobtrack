@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
     const { createUser, setUser, updateUser, user } = useContext(AuthContext);
@@ -38,6 +39,9 @@ const Register = () => {
     }
     return (
         <div className="flex justify-center items-center min-h-screen my-8">
+            <Helmet>
+                <title>Register | JobTrack</title>
+            </Helmet>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
                 <p className="font-medium text-xs text-center mb-3 text-secondary">Register </p>
                 <h2 className="font-semibold text-3xl text-center mx-5 text-success">Start for free Today</h2>

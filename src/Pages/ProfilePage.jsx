@@ -1,11 +1,15 @@
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ProfilePage = () => {
     const { auth } = useContext(AuthContext);
     return (
         <div className="container mx-auto flex flex-col justify-center items-center my-12 space-y-2">
+            <Helmet>
+                <title>Profile | JobTrack</title>
+            </Helmet>
             <img className="w-36 rounded-full outline-4 outline-offset-4 outline-secondary" src={auth.currentUser?.photoURL} alt="" />
             <h2 className="text-3xl font-medium text-success">{auth.currentUser?.displayName}</h2>
             <h2 className="text-xl text-neutral">{auth.currentUser?.email}</h2>

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
     const [error, setError] = useState('')
@@ -22,6 +23,9 @@ const Login = () => {
     }
     return (
         <div className="flex justify-center items-center min-h-screen my-8">
+            <Helmet>
+                <title>Login | JobTrack</title>
+            </Helmet>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
                 <p className="font-medium text-xs text-center mb-3 text-secondary">Welcome Back!</p>
                 <h2 className="font-semibold text-2xl text-center mx-5 text-success">Login your Account</h2>

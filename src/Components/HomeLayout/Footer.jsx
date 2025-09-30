@@ -4,7 +4,7 @@ const Footer = () => {
         <div >
             <div className='bg-base-200'>
                 <footer className="footer sm:footer-horizontal container mx-auto text-base-content p-10">
-                <aside>
+                <aside className='mx-auto lg:mx-0'>
                     <img className='w-[250px] md:w-[200px] lg:w-[250px] rounded-xl lg:ml-7 mx-auto lg:mx-0' src={footer} alt="" />
                 </aside>
                 <nav className=' lg:mx-0 mx-auto'>

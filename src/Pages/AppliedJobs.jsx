@@ -3,6 +3,7 @@ import { JobsContext } from "../Provider/JobsProvider";
 import { useLoaderData } from "react-router-dom";
 import AppliedJob from "../Components/AppliedJob";
 import { IoArrowBackOutline } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 // import Loading from "../Components/Loading";
 const AppliedJobs = () => {
     const { jobs } = useContext(JobsContext);
@@ -22,6 +23,9 @@ const AppliedJobs = () => {
 
     return (
         <div className="container mx-auto my-5 ">
+            <Helmet>
+                <title>Applied Jobs | JobTrack</title>
+            </Helmet>
             <div className="flex flex-col justify-center items-center space-y-1 bg-base-100 rounded-2xl py-7 mx-6">
                 <h2 className="text-success text-2xl font-semibold">Applied Jobs</h2>
                 <p className="text-neutral ">Find Your Dream Job</p>

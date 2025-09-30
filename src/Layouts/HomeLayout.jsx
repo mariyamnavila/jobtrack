@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import CategoryMain from "../Components/HomeLayout/CategoryMain";
 import ClientReviews from "../Components/HomeLayout/ClientReviews";
 import Companies from "../Components/HomeLayout/Companies";
@@ -12,6 +13,9 @@ import Numbers from "../Components/HomeLayout/Numbers";
 const HomeLayout = () => {
     return (
         <div>
+            <Helmet>
+                <title>Home | JobTrack</title>
+            </Helmet>
             <Hero></Hero>
             {/* <Category></Category> */}
             <CategoryMain></CategoryMain>

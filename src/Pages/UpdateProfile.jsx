@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const UpdateProfile = () => {
     const { setUser, updateUser, user } = useContext(AuthContext);
@@ -29,6 +30,9 @@ const UpdateProfile = () => {
     }
     return (
         <div className="flex justify-center items-center min-h-screen my-8">
+            <Helmet>
+                <title>Update | JobTrack</title>
+            </Helmet>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
                 <p className="font-medium text-xs text-center mb-3 text-secondary">Want to change Your Profile</p>
                 <h2 className="font-semibold text-2xl text-center mx-5 text-success">Update your Account</h2>
