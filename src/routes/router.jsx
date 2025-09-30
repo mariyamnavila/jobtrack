@@ -10,6 +10,8 @@ import Register from "../Pages/Register";
 import PrivateRoute from "../Provider/PrivateRoute";
 import ProfilePage from "../Pages/ProfilePage";
 import UpdateProfile from "../Pages/UpdateProfile";
+import BlogLayout from "../Layouts/BlogLayout";
+import BlogPage from "../Pages/BlogPage";
 
 
 async function mainLoader() {
@@ -39,10 +41,6 @@ const router = createBrowserRouter([
                 element: <CompanyJobList></CompanyJobList>,
                 loader: () => fetch('/jobList.json'),
                 hydrateFallbackElement: <Loading></Loading>
-            },
-            {
-                path: '/blog',
-                element: <p>blog</p>
             },
             {
                 path: '/statistics',
@@ -83,6 +81,16 @@ const router = createBrowserRouter([
             {
                 path: '/auth/login',
                 element: <Login></Login>
+            },
+        ]
+    },
+    {
+        path: '/blog',
+        element: <BlogLayout></BlogLayout>,
+        children: [
+            {
+                path: '/blog',
+                element: <BlogPage></BlogPage>
             },
         ]
     },

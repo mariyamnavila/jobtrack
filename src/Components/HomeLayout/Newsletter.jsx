@@ -8,7 +8,7 @@ import Newsletter1 from '../../assets/newsletter.jpg';
 // import bg from '../../assets/image-bg.png';
 const Newsletter = () => {
     return (
-        <div className={`bg-[url('/src/assets/image-bg.png')] max-w-5xl rounded-xl lg:mx-auto mx-3 pt-16 pb-28 my-16 flex flex-col`}>
+        <div className={` bg-linear-65 from-primary to-info max-w-5xl rounded-xl lg:mx-auto mx-3 pt-16 pb-28 my-16 flex flex-col`}>
             <div className="relative  lg:block hidden">
                 <img className="absolute w-[75px] h-[100px] object-cover -top-5 left-8 rounded-[10px] outline-2 outline-offset-2 outline-primary" src={find} alt="" />
                 <img className="absolute w-[60px] h-[70px] object-cover rounded-[10px] top-15 left-40 outline-2 outline-offset-2 outline-primary" src={heroPic2} alt="" />
